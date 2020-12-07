@@ -14,8 +14,7 @@
   -webkit-box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.75);
   box-shadow: 0px 0px 21px 0px rgba(10, 10, 10, 0.75);
-  height: 90vh;
-  overflow: auto;
+  /* height: 90vh; */
   background: rgb(235, 133, 133);
   background: linear-gradient(
     45deg,
@@ -35,17 +34,59 @@
   margin: auto;
 }
 
-.app_main > ul {
+.app_main_todos {
+  margin-bottom: 20px;
+}
+
+.app_main > .app_main_todos > ul {
   margin-top: 30px;
+  max-height: 55vh;
+  overflow: auto;
+}
+
+.app_main > .app_main_todos > ul::-webkit-scrollbar {
+  background: rgb(129, 5, 167);
+  background: linear-gradient(
+    0deg,
+    rgba(129, 5, 167, 1) 8%,
+    rgba(129, 5, 167, 1) 93%
+  );
+  border-radius: 20px;
+  width: 1.2rem;
+}
+
+.app_main > .app_main_todos > ul::-webkit-scrollbar-thumb {
+  background: rgb(223, 45, 112);
+  background: linear-gradient(
+    0deg,
+    rgba(223, 45, 112, 1) 27%,
+    rgba(235, 142, 96, 1) 95%
+  );
+  border-radius: 20px;
+}
+
+.form {
+  text-align: center !important;
+}
+
+.Input {
+  font-size: 1.5rem !important;
+  text-align: center !important;
 }
 
 .app_main > Button {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 20px;
+  padding: 10px !important;
+  background-color: purple !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  width: 50% !important;
+  border-radius: 20px !important;
 }
 
-.app_main > ul > li {
+.app_main > .app_main_todos > ul > li {
   list-style-type: none;
   font-size: 1.7rem;
   margin: 20px;

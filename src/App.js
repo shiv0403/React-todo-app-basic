@@ -18,11 +18,13 @@ function App() {
       <h1>Todo List App</h1>
 
       <div className="app_main">
-        <ul>
-          {Todos.map((todo) => (
-            <li>{todo}</li>
-          ))}
-        </ul>
+        <div className="app_main_todos">
+          <ul>
+            {Todos.map((todo) => (
+              <li>{todo}</li>
+            ))}
+          </ul>
+        </div>
 
         <FormControl className="form">
           <InputLabel>Write a todo</InputLabel>
@@ -32,7 +34,7 @@ function App() {
             className="Input"
           />
         </FormControl>
-
+        <br />
         <Button
           onClick={addTodo}
           type="submit"

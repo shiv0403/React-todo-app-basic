@@ -3,11 +3,7 @@ import "./App.css";
 import { Button, FormControl, InputLabel, Input } from "@material-ui/core";
 
 function App() {
-  const [Todos, setTodos] = useState([
-    "Take dogs for a walk",
-    "Take the rubbish out",
-    "buy eggs and drink milk",
-  ]);
+  const [Todos, setTodos] = useState([]);
 
   const [input, setInput] = useState("");
 
